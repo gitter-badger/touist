@@ -22,10 +22,10 @@
       <h1>
 <a id="touist-the-ide-for-propositional-logic" class="anchor" href="#touist-the-ide-for-propositional-logic" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TouIST, the IDE for propositional logic</h1>
 
-<p><a href="https://travis-ci.org/FredMaris/touist"><img src="https://travis-ci.org/FredMaris/touist.svg?branch=master" alt="Travis (Linux/Mac) build state"></a>
-<a href="https://ci.appveyor.com/project/FredMaris/touist/branch/master"><img src="https://ci.appveyor.com/api/projects/status/github/FredMaris/touist?branch=master&amp;svg=true" alt="AppVeyor (Windows) build state"></a></p>
+<p><a href="https://travis-ci.org/touist/touist"><img src="https://travis-ci.org/touist/touist.svg?branch=master" alt="Travis (Linux/Mac) build state"></a>
+<a href="https://ci.appveyor.com/project/touist/touist/branch/master"><img src="https://ci.appveyor.com/api/projects/status/github/touist/touist?branch=master&amp;svg=true" alt="AppVeyor (Windows) build state"></a></p>
 
-<p><a href="https://github.com/FredMaris/touist/releases">Get the latest release here</a>. Touist works on osx-x64, linux-x64 and windows-x86.</p>
+<p><a href="https://github.com/touist/touist/releases">Get the latest release here</a>. Touist works on osx-x64, linux-x64 and windows-x86.</p>
 
 <p>TouIST is a user-friendly tool for solving propositionnal logic problems using a high-level logic language (known as the <em>bigand</em> format or syntax or language). This language allows complex expressions like <em>big and</em>, <em>sets</em>... </p>
 
@@ -33,7 +33,7 @@
 
 <p>The TouIST has been initialized by Frederic Maris and Olivier Gasquet, associate professors at the <em>Institut de Recherche en Informatique de Toulouse</em> (IRIT). It is a "second" or "new" version of a previous program, <a href="http://www.irit.fr/satoulouse/">SAToulouse</a>.</p>
 
-<p>The development is done by a team of five students in first year of master's degree at the <em>Université Toulouse III — Paul Sabatier</em>. This project is a part of their work at school. See <a href="https://github.com/FredMaris/touist/blob/master/CONTRIBUTORS.md">CONTRIBUTORS</a>.</p>
+<p>The development is done by a team of five students in first year of master's degree at the <em>Université Toulouse III — Paul Sabatier</em>. This project is a part of their work at school. See <a href="https://github.com/touist/touist/blob/master/CONTRIBUTORS.md">CONTRIBUTORS</a>.</p>
 
 <p>Here is the main screen with the formulas:<br>
 <img src="https://cloud.githubusercontent.com/assets/2195781/13850422/185bcf66-ec5a-11e5-9fee-59b5c2ae38b7.png" alt="formulas"></p>
@@ -43,19 +43,19 @@
 
 <p>Touist is platform-specific because of the ocaml <code>touist</code> translator that translates the high-level <code>.touistl</code> (touist language files) into <code>SAT_DIMACS</code> or <code>SMT2</code> is compiled into an architecture-specific binary (for performances).</p>
 
-<p>We have some issues with compiling the ocaml translator for Windows. Some of the first releases have been compiled for Windows, but the tool we used has been discontinued (<a href="https://github.com/FredMaris/touist/issues/5">see corresponding issue</a>).</p>
+<p>We have some issues with compiling the ocaml translator for Windows. Some of the first releases have been compiled for Windows, but the tool we used has been discontinued (<a href="https://github.com/touist/touist/issues/5">see corresponding issue</a>).</p>
 
 <h2>
 <a id="what-is-touist-made-of" class="anchor" href="#what-is-touist-made-of" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is Touist made of?</h2>
 
-<p>Touist uses Java (&gt;= jre6) and embeds an architecture-specific binary, <a href="https://github.com/FredMaris/touist/tree/master/touist-translator">touistc</a> (we coded it in ocaml), which translates touistl language to dimacs. The dimacs files are then given to another binary, the SAT (or SMT) solver, and then displayed to the user.</p>
+<p>Touist uses Java (&gt;= jre6) and embeds an architecture-specific binary, <a href="https://github.com/touist/touist/tree/master/touist-translator">touistc</a> (we coded it in ocaml), which translates touistl language to dimacs. The dimacs files are then given to another binary, the SAT (or SMT) solver, and then displayed to the user.</p>
 
 <p><em>touistc</em> can also be used in command-line.</p>
 
 <h2>
 <a id="rebuilding-it" class="anchor" href="#rebuilding-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Rebuilding-it</h2>
 
-<p>See the <a href="https://github.com/FredMaris/touist/blob/master/INSTALL.md">./INSTALL.md</a> file.</p>
+<p>See the <a href="https://github.com/touist/touist/blob/master/INSTALL.md">./INSTALL.md</a> file.</p>
 
 <hr>
 
